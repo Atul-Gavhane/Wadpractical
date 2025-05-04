@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title> J-QueryMobile Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- jQuery Mobile CDN -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .custom-footer {
+      background: #007acc;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      font-size: 15px;
+    }
+
+    .highlight {
+      color: #007acc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home Page -->
+  <div data-role="page" id="home">
+    <div data-role="header" data-theme="b">
+      <h1> j-Query Mobile Page</h1>
+    </div>
+
+    <div data-role="content">
+      <h2>Hello there 👋</h2>
+      <p>This is a custom mobile website using jQuery Mobile for smooth navigation and responsiveness.</p>
+      <a href="#portfolio" class="ui-btn ui-btn-inline ui-corner-all">Portfolio</a>
+      <a href="#feedback" class="ui-btn ui-btn-inline ui-corner-all">Feedback</a>
+    </div>
+
+    <div data-role="footer" class="custom-footer">
+      <p>Created with j-ouery - 2025</p>
+    </div>
+  </div>
+
+  <!-- Portfolio Page -->
+  <div data-role="page" id="portfolio">
+    <div data-role="header" data-theme="b">
+      <h1>Portfolio</h1>
+      <a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+    </div>
+
+    <div data-role="content">
+      <h3 class="highlight">Recent Projects</h3>
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#">Personal Blog Website</a></li>
+        <li><a href="#">Photo Gallery App</a></li>
+        <li><a href="#">E-commerce UI Design</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Feedback Page -->
+  <div data-role="page" id="feedback">
+    <div data-role="header" data-theme="b">
+      <h1>Feedback</h1>
+      <a href="#home" data-icon="home" class="ui-btn-right">Home</a>
+    </div>
+
+    <div data-role="content">
+      <form>
+        <label for="fname">Name:</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter your name">
+
+        <label for="femail">Email:</label>
+        <input type="email" name="femail" id="femail" placeholder="Enter your email">
+
+        <label for="fmsg">Feedback:</label>
+        <textarea name="fmsg" id="fmsg" placeholder="Your feedback..."></textarea>
+
+        <input type="submit" value="Submit Feedback" class="ui-btn ui-btn-b">
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

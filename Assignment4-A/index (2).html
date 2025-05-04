@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simple Mobile Website</title>
+
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <!-- jQuery Mobile JS -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- Page 1 -->
+<div data-role="page" id="homePage">
+  <div data-role="header">
+    <h1>Welcome to My Mobile Site</h1>
+  </div>
+
+  <div data-role="content">
+    <p>This is a simple mobile website with jQuery Mobile.</p>
+    <a href="#aboutPage" data-role="button">Go to About Page</a>
+  </div>
+</div>
+
+<!-- About Page -->
+<div data-role="page" id="aboutPage">
+  <div data-role="header">
+    <h1>About This Site</h1>
+  </div>
+
+  <div data-role="content">
+    <h2>Information</h2>
+    <p>This mobile website uses jQuery Mobile to create a simple user interface that works on all devices.</p>
+    <ul data-role="listview">
+      <li>Easy to use</li>
+      <li>Mobile-first design</li>
+      <li>Responsive layout</li>
+    </ul>
+    <a href="#homePage" data-role="button">Back to Home Page</a>
+  </div>
+</div>
+
+<!-- Contact Page -->
+<div data-role="page" id="contactPage">
+  <div data-role="header">
+    <h1>Contact Us</h1>
+  </div>
+
+  <div data-role="content">
+    <h2>Get in Touch</h2>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" />
+
+      <label for="email">Your Email:</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" />
+
+      <input type="submit" value="Submit" data-role="button" />
+    </form>
+    <a href="#homePage" data-role="button">Back to Home Page</a>
+  </div>
+</div>
+
+</body>
+</html>
